@@ -4,7 +4,7 @@ const selectCurrencyTwo = document.querySelector('#currency-two');
 const amountCurrencyOne = document.querySelector('#amount-one');
 const amountCurrencyTwo = document.querySelector('#amount-two');
 
-const swapBtn = document.querySelector('#switch');
+const swapBtn = document.querySelector('#swap');
 const showRate = document.querySelector('#rate');
 
 // Event listeners
@@ -13,7 +13,7 @@ amountCurrencyOne.addEventListener('input', calculate);
 selectCurrencyTwo.addEventListener('change', calculate);
 amountCurrencyTwo.addEventListener('input', calculate);
 
-switchBtn.addEventListener('click', () => {
+swapBtn.addEventListener('click', () => {
   const temp = selectCurrencyOne.value;
   selectCurrencyOne.value = selectCurrencyTwo.value;
   selectCurrencyTwo.value = temp;
